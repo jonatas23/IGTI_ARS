@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: prestador-servico
+  config:
+    import:
+      - 'optional:configserver:http://config-server:8888'
+
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+endereco:
+  ip: db
